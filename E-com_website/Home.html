@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Home.css">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div id="blurOverlay" class="blur-overlay"></div>
+    <script src = "./Home.js" defer></script>
+    <script src = "./cart.js" defer></script>
+    <script src = "./login.js" defer></script>
+    <script src = "./sort.js" defer></script>
+    <script src = "./slider.js" defer></script>
+    <script src = "./validation.js" defer></script>
+    <script src = "./togglenav.js" defer></script>
+    <script src = "./sidemenu.js" defer></script>
+    <script src = "./search.js" defer></script>
+    <script src="review.js" defer></script>
+
+
+    <div class = "header">
+        <div class = "menu">
+            <img src = "./Source/menu-burger.png" onclick="openNav()">
+        </div>
+        <div class = "logo">
+            <a href = "./Home.html">
+                <div class = "logo-name">
+                <span>KALAKAAR INDIA</span>
+                </div>
+            </a>
+        </div>
+        <div class = "icons">
+            <div class = "sign-in" onclick="openForm()">
+            <img src = "./Source/user.png">
+            </div>
+
+            <div class="search" id="searchBox">
+                <input type="text" id="searchInput" placeholder="Type your search...">
+                <img src = "./Source/search.png" onclick="searchProducts()">
+            </div>
+            
+            <div class = "cart">
+            <img src = "./Source/shopping-basket.png" onclick="opencart()">
+            </div>
+        </div>
+    </div>
+    
+    <div class = "navbar">
+        <a href = "./SlimCases.html">Designer Slim Cases</a>
+        <a href = "./GlassCases.html">Glass Cases</a>
+        <a href = "./liquidCases.html">Liquid Silicon Case</a>
+        <div class = "dropdown">
+        <a href = "./OnlyIphone.html" class="dropbtn">iPhone Zone</a>
+            <div class = "thread1-nav">
+                <a href = "./OnlyIphone.html">iPhone Cases</a>
+                <a href = "#">iWatch Bands</a>
+                <a href = "./AirpodCase.html">AirPods Cases</a>
+            </div>
+        </div>
+        <a href = "./CustomIphone.html">Customised iPhone Cases</a>
+        <a href = "./silver.html">MURE By KalaKaar</a>
+        <a href = "./phoneHolder.html">Phone Holder</a>
+    </div>
+
+
+    <div class = "banner">
+        <div class = "slide">
+            <img src="https://kalakaarindiaa.com/cdn/shop/collections/32.jpg?v=1625561312&width=1950" style="width:100%;">
+            <h1>Slim Cases</h1>
+            <p>Sustainable, Colourful</p>
+            <button class="btn"><a href = "./SlimCases.html">View Products</a></button>
+        </div>
+
+        <div class = "slide">
+            <img src="https://kalakaarindiaa.com/cdn/shop/collections/31.jpg?v=1625560980&width=1950" style="width:100%;">
+            <h1>Glass Cases</h1>
+            <p>Protection with Style</p>
+            <button class="btn"><a href = "./GlassCases.html">View Products</a></button>
+        </div>
+
+        <div class="prev" onclick="changeSlide(-1)"><img src = "./Source/angle-left.png"></div>
+        <div class="next" onclick="changeSlide(1)"><img src = "./Source/angle-right.png"></div>
+
+    </div>
+
+    <div class="products">
+        <div class="heading">
+            <h1>Our Products</h1>
+        </div>
+        <div class="cards">
+            <div class="item">
+                <div class="card-main">
+                    <img src="https://kalakaarindiaa.com/cdn/shop/files/003_63a94752-d029-4e89-ae11-b4ba60e18437.jpg?v=1688976283&width=3000" width="100%">
+                    <div class="cardmain-description">
+                        <p>Water Bottle With Metal Straw</p>
+                    </div>
+                    <a href = "./waterbottle.html"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-main">
+                    <img src="https://kalakaarindiaa.com/cdn/shop/files/IMG_9785.jpg?v=1691745753&width=3000" width="100%">
+                    <div class="cardmain-description">
+                        <p>Designer Slim Case</p>
+                    </div>
+                    <a href = "./SlimCases.html"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-main">
+                    <img src="https://kalakaarindiaa.com/cdn/shop/files/IMG_9425_98574bf2-171b-45d2-925d-0090a4feebce.jpg?v=1693903004&width=3000" width="100%">
+                    <div class="cardmain-description">
+                        <p>Designer Glass Case</p>
+                    </div>
+                    <a href = "./GlassCases.html"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-main">
+                    <img src="https://kalakaarindiaa.com/cdn/shop/files/IMG_8479_20231205-235829.jpg?v=1701933060&width=3000" width="100%">
+                    <div class="cardmain-description">
+                        <p>Airpod Cases</p>
+                    </div>
+                    <a href = "./AirpodCase.html"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-main">
+                    <img src="https://kalakaarindiaa.com/cdn/shop/files/IMG_4363.jpg?v=1701868371&width=3000" width="100%">
+                    <div class="cardmain-description">
+                        <p>Only For iPhone</p>
+                    </div>
+                    <a href = "./OnlyIphone.html"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-main">
+                    <img src="https://kalakaarindiaa.com/cdn/shop/files/IMG_3475.jpg?v=1701865338&width=3000" width="100%">
+                    <div class="cardmain-description">
+                        <p>Customised iPhone Cases</p>
+                    </div>
+                    <a href = "./CustomIphone.html"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-main">
+                    <img src="https://kalakaarindiaa.com/cdn/shop/products/IMG_1731_209878a6-5bd7-4af9-a67f-ae7c7dc00090.jpg?v=1651994782&width=3000" width="100%">
+                    <div class="cardmain-description">
+                        <p>Silver Jewellery</p>
+                    </div>
+                    <a href = "./silver.html"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-main">
+                    <img src="https://kalakaarindiaa.com/cdn/shop/products/6_9-_-_16.jpg?v=1634387476&width=460" width="100%">
+                    <div class="cardmain-description">
+                        <p>Popular Products</p>
+                    </div>
+                    <a href = "./otherprodcts.html"><button class="btn">Shop Now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="reviews" id="reviewsSection">
+        
+    </div>
+    <div class = "Reviews">
+        <button onclick="openReviewForm()">Write a Review</button>
+    </div>
+
+    <div id="reviewForm" class="review-form">
+        <h2>Write a Review</h2>
+        <br>
+        <label for="personName">Your Name:</label>
+        <input type="text" id="personName" placeholder="Enter your name" required>
+        <br>
+        <br>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" placeholder="Enter product name" required>
+        <br>
+        <br>
+        <label for="rating">Rating:</label>
+        <select id="rating" required>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+        <br>
+        <br>
+        <label for="reviewText">Review:</label>
+        <br>
+        <br>
+        <textarea id="reviewText" placeholder="Write your review here..." rows="4" cols="50" required></textarea>
+        <button onclick="submitReview()">Submit Review</button>
+        <button onclick="closeReviewForm()">Cancel</button>
+    </div>
+
+
+    <div class="mini-blog">
+        <div class="head">
+            <h1>Reasons to love</h1>
+        </div>
+        <div class="reasons">
+            <div class="transactions">
+                <img src="./Source/shield-alt.png">
+                <h>Secure transactions</h>
+                <p>Transactions are held with bank grade security</p>
+            </div>
+            <div class="checkout">
+                <img src="./Source/refresh.png">
+                <h>Simple checkout</h>
+                <p>Our simple checkouts are easy and simple to use</p>
+            </div>
+            <div class="touch">
+                <img src="./Source/comments.png">
+                <h>Get In touch</h>
+                <p>Have a question? get in touch anytime</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class = "footer">
+        <div class = "content">
+            <div class="menu-main">
+                <h1>Main Menu</h1>
+                <ul>
+                    <a href="./SlimCases.html"><li>Designer Slim Cases</li></a>
+                    <a href="./GlassCases.html"><li>Glass Cases</li></a>
+                    <a href="#"><li>Liquid Silicon Case</li></a>
+                    <a href="./OnlyIphone.html"><li>iPhone Zone</li></a>
+                    <a href="./CustomIphone.html"><li>Customised iPhone Cases</li></a>
+                    <a href="./silver.html"><li>MURE By Kalakaar</li></a>
+                    <a href="#"><li>Phone Holder</li></a>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h1>Contact</h1>
+                <ul>
+                    <li>2022 © Kalakaar India</li>
+                    <li>Made With ❤️ In India</li>
+                    <li>Call Us @ 6356060606</li>
+                    <li>Email @ care@kalakaarindia.in</li>
+                </ul>
+            </div>
+
+            <div class="links">
+                <h1>Useful Links</h1>
+                <ul>
+                    <a href="#"><li>The Story Behind Kalakaar</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                    <a href="#"><li>Exchange Policy</li></a>
+                    <a href="#"><li>Shipping Policy</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "affi">
+            <p>© Kalakaar Indiaa 2023</p>
+            <p>Powered by Shopify</p>
+        </div>
+    </div>
+
+    
+    <div id="chartnav" class="addcartnav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closecart()">&times;</a>
+        <div class="add-chart">
+            <h1>Cart</h1>
+            <div id="cartItems"></div>
+            <div class="total">
+            <div id="cartTotalContainer"></div>
+            <div id ="checkoutButtonContainer"></div>
+        </div>
+        </div>
+    </div>
+
+    
+    <div class="account" id="myaccount">
+
+        <!-- Login -->
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+            <div class = "top">
+              <h1>Login <br><span>Dont have an account? <span onclick="showSignUpForm()">Sign Up</span></span></h1>
+              <img src = "./Source/cross.png" onclick="closeForm()" class="cancel">
+            </div>
+            <div class="middle">
+              <input type="text" placeholder="Email" name="email" id = "email"required>
+              <span id = "Eerror" style = "color: red;font-size: x-small;"></span>
+              <input type="password" placeholder="Password" name="psw" id = "pw"required>
+              <span id = "Perror" style = "color: red;font-size: x-small;"></span>
+            </div>
+            <div class = "bottom">
+              <button type="submit" class="btn" onclick="SubmitLogin(event)">Login</button>
+              <p>Forgot Password?</p>
+            </div>
+            </form>
+          </div>
+
+          <!-- Sign Up -->
+          <div class="form-popup" id="signUpForm">
+            <form class="form-container">
+            <div class = "top">
+              <h1>Sign Up <br><span>Already have an account? <span onclick="showLoginForm()">Login</span></span></h1>
+              <img src = "./Source/cross.png" onclick="closeForm1()" class="cancel">
+            </div>
+            <div class="middle">
+              <input type="text" placeholder="Email" name="email" id = "suemail"required>
+              <span id = "suEerror" style = "color: red;font-size: x-small;"></span>
+              <input type="password" placeholder="Password" name="psw" id = "supw"required>
+              <span id = "suPerror" style = "color: red;font-size: x-small;"></span>
+            </div>
+            <div class = "bottom">
+              <button type="submit" class="btn" onclick="SubmitEvent(event)">Create an Account</button>
+              <p>Forgot Password?</p>
+            </div>
+            </form>
+          </div>
+
+    </div>
+    
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <div class="payment-content">
+                <div class="paytop">
+                    <h2>Complete Your Purchase</h2>
+                    <span class="close" onclick="closePaymentModal()">&times;</span>
+                </div>
+                <div class="paymiddle">
+                    <div class="pymiddle-lside">
+                        <input type="number" placeholder="Card Number" name="card" id="card" maxlength="16" required oninput="handleCardNum(event)">
+                        <span id="cardError" class="error"></span>
+                    </div>
+                    <div class="pymiddle-rside">
+                        <input type="text" placeholder="Expiration Date (MM/YYYY)" pattern="(0[1-9]|1[0-2])\/\d{4}" name="date" id="date" required>
+                        <span id="dateError" class="error"></span>
+                        <input type="number" placeholder="CVV" name="cvv" minlength="3" maxlength="3" id="cvv" required oninput="handleCvvNum(event)">
+                        <span id="cvvError" class="error"></span>
+                    </div>
+                </div>
+                <div class="paybottom">
+                    <button onclick="completePayment()">Pay</button>
+                    <h3 id="paymentModalTotal"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="side-menu">
+        <a href="./SlimCases.html">Designer Slim Cases</a>
+        <a href="./GlassCases.html">Glass Cases</a>
+        <a href="./liquidCases.html">Liquid Silicon Case</a>
+        <div class="dropdown">
+            <a href="./OnlyIphone.html" class="dropbtn">iPhone Zone</a>
+            <div class="thread1-nav">
+                <a href="./OnlyIphone.html">iPhone Cases</a>
+                <a href="#">iWatch Bands</a>
+                <a href="./AirpodCase.html">AirPods Cases</a>
+            </div>
+        </div>
+        <a href="./CustomIphone.html">Customised iPhone Cases</a>
+        <a href="./silver.html">MURE By KalaKaar</a>
+        <a href="./phoneHolder.html">Phone Holder</a>
+    </div>
+    </div>
+    
+    
+
+    </body>
+</html>

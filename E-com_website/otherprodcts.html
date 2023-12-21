@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./productpage.css">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div id="blurOverlay" class="blur-overlay"></div>
+    <script src = "./AirpodCase.js" defer></script>
+    <script src = "./cart.js" defer></script>
+    <script src = "./login.js" defer></script>
+    <script src = "./sort.js" defer></script>
+    <script src = "./slider.js" defer></script>
+    <script src = "./validation.js" defer></script>
+    <script src = "./togglenav.js" defer></script>
+    <script src = "./search.js" defer></script>
+    <script src = "./sidemenu.js" defer></script>
+
+
+
+    <div class = "header">
+        <div class = "menu">
+            <img src = "./Source/menu-burger.png" onclick="openNav()">
+        </div>
+        <div class = "logo">
+            <a href = "./Home.html">
+                <div class = "logo-name">
+                <span>KALAKAAR INDIA</span>
+                </div>
+            </a>
+        </div>
+        <div class = "icons">
+            <div class = "sign-in" onclick="openForm()">
+            <img src = "./Source/user.png">
+            </div>
+            <div class="search" id="searchBox">
+                <input type="text" id="searchInput" placeholder="Type your search...">
+                <img src = "./Source/search.png" onclick="searchProducts()">
+            </div>
+            <div class = "cart">
+                <img src = "./Source/shopping-basket.png" onclick="opencart()">
+            </div>
+        </div>
+    </div>
+    
+    <div class = "navbar">
+        <a href = "./SlimCases.html">Designer Slim Cases</a>
+        <a href = "./GlassCases.html">Glass Cases</a>
+        <a href = "./liquidCases.html">Liquid Silicon Case</a>
+        <div class = "dropdown">
+        <a href = "./OnlyIphone.html" class="dropbtn">iPhone Zone</a>
+            <div class = "thread1-nav">
+                <a href = "./OnlyIphone.html">iPhone Cases</a>
+                <a href = "#">iWatch Bands</a>
+                <a href = "./AirpodCase.html">AirPods Cases</a>
+            </div>
+        </div>
+        <a href = "./CustomIphone.html">Customised iPhone Cases</a>
+        <a href = "./silver.html">MURE By KalaKaar</a>
+        <a href = "./phoneHolder.html">Phone Holder</a>
+    </div>
+
+
+    <div class = "banner">
+        <div class = "slide">
+            <img src="./Source/others.png" style="width:100%;">
+            <h2>Prodcts More than Cases</h2>
+        </div>
+    </div>
+
+    <div class = "modify">
+        <div class = "filter" onclick="toggleNav()">
+            <img src = "./Source/filter.png">
+            <p>Filter</p>
+            <img src = "./Source/angle-small-down.png" id = "arrowIcon">
+        </div>
+        <div class="modify-middle">
+        </div>
+
+            <div class="sort">
+                <img src = "./Source/sort-alt.png">
+                <p>Sort By</p>
+                    <div class = "options">
+                        <button onclick="sortProducts('price-low-to-high')">Price, Low to High</button>
+                        <button onclick="sortProducts('price-high-to-low')">Price, High to Low</button>
+                        <button onclick="sortProducts('name-a-to-z')">Alphabetically, A-Z</button>
+                        <button onclick="sortProducts('name-z-to-a') ">Alphabetically, Z-A</button>
+                    </div>
+            </div>
+        </div>
+        <div class="sale-items">
+            <div id="mySidemenu" class="sidemenu">
+                <div class="sidemenu-content">
+                <div class="availability">
+                    <h1>Availability</h1>
+                    <ul class="collection">
+                        <li>
+                            <input type="checkbox" name="filter_availability" value="1" id="filter-availabilty"><label for="filter-availabilty">In Stock</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="filter_unavailability" value="1" id="filter-unavailabilty"><label for="filter-unavailabilty">Out of Stock</label>
+                        </li>
+                    </ul>
+                </div>
+    
+                <h1>Price</h1>
+                <div class="slidecontainer">
+                    <span class="multi-range">
+                        <input type="range" min="0" max="50" value="0" id="lower">
+                        <input type="range" min="0" max="50" value="50" id="upper">
+                        <div class = "value-min">
+                        <p>Minimum: <span id="min"></span></p>
+                        </div>
+                        <div class="value-max">
+                        <p>Maximum: <span id="max"></span></p>
+                    </div>
+                    </span>
+                  </div>
+            </div>
+            </div>
+          
+          <div id="main">
+            <div class="cards">
+                <div class="item">
+                    <div class="card">
+                        <img src="https://kalakaarindiaa.com/cdn/shop/products/WhatsAppImage2022-01-05at4.51.07PM_1.jpg?v=1641381934&width=460" width="100%">
+                        <div class="card-description">
+                            <p>Big Mouth Hand Warmer</p>
+                            <br>
+                            <p1>Rs. 1199.00</p1>
+                        </div>
+                        <button class="btn addToCart" id="addToCartButton" data-product='Big Mouth Hand Warmer' onclick="addToCart('Big Mouth Hand Warmer', '1199','https://kalakaarindiaa.com/cdn/shop/products/WhatsAppImage2022-01-05at4.51.07PM_1.jpg?v=1641381934&width=460')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="https://kalakaarindiaa.com/cdn/shop/products/800_20f51ae8-979e-42bb-b5cd-569215b1ad29.jpg?v=1634382296&width=460" width="100%">
+                        <div class="card-description">
+                            <p>Brush Holder Makeup</p>
+                            <br>
+                            <p1>Rs. 6599.00</p1>
+                        </div>
+                        <button class="btn addToCart" id="addToCartButton" data-product='Brush Holder Makeup' onclick="addToCart('Brush Holder Makeup', '6599','https://kalakaarindiaa.com/cdn/shop/products/800_20f51ae8-979e-42bb-b5cd-569215b1ad29.jpg?v=1634382296&width=460')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="https://kalakaarindiaa.com/cdn/shop/products/06_8ca62124-c198-434e-9b0a-ea38732d4028.jpg?v=1634538662&width=460" width="100%">
+                        <div class="card-description">
+                            <p>Portable Room Heater</p>
+                            <br>
+                            <p1>Rs. 3999.00</p1>
+                        </div>
+                        <button class="btn addToCart" id="addToCartButton" data-product='Portable Room Heater' onclick="addToCart('Portable Room Heater', '3999','https://kalakaarindiaa.com/cdn/shop/products/06_8ca62124-c198-434e-9b0a-ea38732d4028.jpg?v=1634538662&width=460')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="https://kalakaarindiaa.com/cdn/shop/products/04_dc302982-a290-4e6f-8be7-13cc616cf864.jpg?v=1634725821&width=460" width="100%">
+                        <div class="card-description">
+                            <p>Mirror Lamp</p>
+                            <br>
+                            <p1>Rs. 3999.00</p1>
+                        </div>
+                        <button class="btn addToCart" id="addToCartButton" data-product='Mirror Lamp' onclick="addToCart('Mirror Lamp', '3999', 'https://kalakaarindiaa.com/cdn/shop/products/04_dc302982-a290-4e6f-8be7-13cc616cf864.jpg?v=1634725821&width=460')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="https://kalakaarindiaa.com/cdn/shop/products/6_9-_-_16.jpg?v=1634387476&width=460" width="100%">
+                        <div class="card-description">
+                            <p>Lipstick Holder</p>
+                            <br>
+                            <p1>Rs. 1199.00</p1>
+                        </div>
+                        <button class="btn addToCart" id="addToCartButton" data-product='Lipstick Holder' onclick="addToCart('Lipstick Holder', '1199','https://kalakaarindiaa.com/cdn/shop/products/6_9-_-_16.jpg?v=1634387476&width=460')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="https://kalakaarindiaa.com/cdn/shop/products/02_7e4efdbf-a70d-47f5-af42-564ec658b8c2.jpg?v=1634383063&width=460" width="100%">
+                        <div class="card-description">
+                            <p>Capsule Sensor Lamp</p>
+                            <br>
+                            <p1>Rs. 1199.00</p1>
+                        </div>
+                        <button class="btn addToCart" id="addToCartButton" data-product='Capsule Sensor Lamp' onclick="addToCart('Capsule Sensor Lamp', '1199','https://kalakaarindiaa.com/cdn/shop/products/02_7e4efdbf-a70d-47f5-af42-564ec658b8c2.jpg?v=1634383063&width=460')">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+
+        <div id="chartnav" class="addcartnav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closecart()">&times;</a>
+            <div class="add-chart">
+                <h1>Cart</h1>
+                <div id="cartItems"></div>
+                <div class="total">
+                <div id="cartTotalContainer"></div>
+                <div id ="checkoutButtonContainer"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="account" id="myaccount">
+
+            <!-- Login -->
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                <div class = "top">
+                  <h1>Login <br><span>Dont have an account? <span onclick="showSignUpForm()">Sign Up</span></span></h1>
+                  <img src = "./Source/cross.png" onclick="closeForm()" class="cancel">
+                </div>
+                <div class="middle">
+                  <input type="text" placeholder="Email" name="email" id = "email"required>
+                  <span id = "Eerror" style = "color: red;font-size: x-small;"></span>
+                  <input type="password" placeholder="Password" name="psw" id = "pw"required>
+                  <span id = "Perror" style = "color: red;font-size: x-small;"></span>
+                </div>
+                <div class = "bottom">
+                  <button type="submit" class="btn" onclick="login()">Login</button>
+                  <p>Forgot Password?</p>
+                </div>
+                </form>
+              </div>
+    
+              <!-- Sign Up -->
+              <div class="form-popup" id="signUpForm">
+                <form class="form-container">
+                <div class = "top">
+                  <h1>Sign Up <br><span>Already have an account? <span onclick="showLoginForm()">Login</span></span></h1>
+                  <img src = "./Source/cross.png" onclick="closeForm1()" class="cancel">
+                </div>
+                <div class="middle">
+                  <input type="text" placeholder="Email" name="email" id = "suemail"required>
+                  <span id = "suEerror" style = "color: red;font-size: x-small;"></span>
+                  <input type="password" placeholder="Password" name="psw" id = "supw"required>
+                  <span id = "suPerror" style = "color: red;font-size: x-small;"></span>
+                </div>
+                <div class = "bottom">
+                  <button type="submit" class="btn" onclick="signUp()">Create an Account</button>
+                  <p>Forgot Password?</p>
+                </div>
+                </form>
+              </div>
+    
+          </div>
+
+          <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <div class="payment-content">
+                    <div class="paytop">
+                        <h2>Complete Your Purchase</h2>
+                        <span class="close" onclick="closePaymentModal()">&times;</span>
+                    </div>
+                    <div class="paymiddle">
+                        <div class="pymiddle-lside">
+                            <input type="number" placeholder="Card Number" name="card" id="card" maxlength="16" required oninput="handleCardNum(event)">
+                            <span id="cardError" class="error"></span>
+                        </div>
+                        <div class="pymiddle-rside">
+                            <input type="text" placeholder="Expiration Date (MM/YYYY)" pattern="(0[1-9]|1[0-2])\/\d{4}" name="date" id="date" required>
+                            <span id="dateError" class="error"></span>
+                            <input type="number" placeholder="CVV" name="cvv" minlength="3" maxlength="3" id="cvv" required oninput="handleCvvNum(event)">
+                            <span id="cvvError" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="paybottom">
+                        <button onclick="completePayment()">Pay</button>
+                        <h3 id="paymentModalTotal"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="side-menu">
+        <a href="./SlimCases.html">Designer Slim Cases</a>
+        <a href="./GlassCases.html">Glass Cases</a>
+        <a href="./liquidCases.html">Liquid Silicon Case</a>
+        <div class="dropdown">
+            <a href="./OnlyIphone.html" class="dropbtn">iPhone Zone</a>
+            <div class="thread1-nav">
+                <a href="./OnlyIphone.html">iPhone Cases</a>
+                <a href="#">iWatch Bands</a>
+                <a href="./AirpodCase.html">AirPods Cases</a>
+            </div>
+        </div>
+        <a href="./CustomIphone.html">Customised iPhone Cases</a>
+        <a href="./silver.html">MURE By KalaKaar</a>
+        <a href="./phoneHolder.html">Phone Holder</a>
+    </div>
+    </div>
+
+    </body>
+</html>
