@@ -6,7 +6,7 @@ function toggleNav() {
     if (filterNav.style.width === "180px") {
         filterNav.style.width = "0";
         filterNav.style.display = "none";
-        mainContent.style.marginLeft = "0";
+        mainContent.style.marginLeft = "25px";
         arrowIcon.classList.remove("rotate");
     } else {
         filterNav.style.width = "180px";
