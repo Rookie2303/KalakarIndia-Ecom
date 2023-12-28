@@ -738,10 +738,16 @@ input[type=range] {
 
 }
 
+.pymiddle-lside {
+    display:flex;
+    flex-direction: column;
+    
+}
+
 .pymiddle-rside {
     display:flex;
     flex-direction: column;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 
@@ -750,6 +756,7 @@ input[type=range] {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .paybottom button {
@@ -765,6 +772,8 @@ input[type=range] {
 
 .paybottom h3 {
     font-weight: 100;
+    margin-top: 20px;
+    margin-left: 12px;
 }
 
 .pymiddle-rside input[type=text], .pymiddle-rside input[type=number] {
@@ -1015,6 +1024,14 @@ input[type=range] {
         left: 15%;
         z-index: 2;
     }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 5px;
+        border: 1px solid #888;
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 630px) {
@@ -1031,6 +1048,17 @@ input[type=range] {
     .banner p {
         display: none;
     }
+.banner h2 {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -160px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 45px;
+    font-weight: 100;
+}
 
     .form-container {
         width: 350px;
@@ -1139,17 +1167,15 @@ input[type=range] {
 
     .banner h2 {
         position: absolute;
-        margin-left: 220px;
-        margin-top: -125px;
+        left: -20%;
+        top: 100%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         color: rgb(0, 0, 0);
         text-align: center;
-        font-size: 50px;
-        font-weight: 100;
+        font-size: 40px;
+        font-weight: 500;
     }
-
-    
 }
 
 @media only screen and (max-width: 320px) {
@@ -1162,14 +1188,14 @@ input[type=range] {
     }
 
     .banner h2 {
+        left: -20%;
         position: absolute;
-        margin-left: 150px;
-        margin-top: -125px;
+        top: 100%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         color: rgb(0, 0, 0);
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 100;
     }
 

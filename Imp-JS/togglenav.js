@@ -3,16 +3,17 @@ function toggleNav() {
     var arrowIcon = document.getElementById("arrowIcon");
     var mainContent = document.getElementById("main");
 
-    if (filterNav.style.width === "250px") {
+    if (filterNav.style.width === "180px") {
         filterNav.style.width = "0";
         filterNav.style.display = "none";
         mainContent.style.marginLeft = "0";
         arrowIcon.classList.remove("rotate");
     } else {
-        filterNav.style.width = "250px";
-        mainContent.style.marginLeft = "0px";
+        filterNav.style.width = "180px";
+        mainContent.style.marginLeft = "25px";
         filterNav.style.display = "block";
-        filterNav.style.padding = "25px";
+        filterNav.style.padding = "15px";
+        filterNav.style.marginBottom="50px";
         arrowIcon.classList.add("rotate");
     }
 }

@@ -1091,8 +1091,31 @@ body {
 
     }
 
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 5px;
+        border: 1px solid #888;
+        width: 90%;
+    }
+
     .sidenav a:hover {
         color: goldenrod;
+    }
+
+    .sidenav .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    
+    .sidenav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
     }
 
     .sidenav .closebtn {
@@ -1160,6 +1183,21 @@ body {
     
 .sidenav {
     display: block; 
+}
+
+.sidenav .sign-in img {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+
+.sidenav .cart img {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
 }
     .mini-blog {
         display: none;
@@ -1234,6 +1272,22 @@ body {
     .sidenav {
         display: block; 
     }
+
+    .sidenav .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    
+    .sidenav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
     .form-popup {
         left: 10%;
     }
@@ -1249,6 +1303,26 @@ body {
     }
     .form-container {
         padding: 20px;
-    }    
+    }
+
+    .sidenav {
+        display: block; 
+    }
+
+    .sidenav .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    
+    .sidenav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
 }
 
