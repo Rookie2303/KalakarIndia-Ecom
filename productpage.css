@@ -1017,6 +1017,21 @@ input[type=range] {
         margin-top: 40px;
     }
 
+    .sidenav .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    
+    .sidenav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
     .form-popup {
         display: none;
         position: fixed;
@@ -1042,6 +1057,22 @@ input[type=range] {
     left: 10%;
     z-index: 2;
 }
+
+.sidenav .sign-in img {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+
+.sidenav .cart img {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
 }
 
 @media only screen and (max-width: 599px) { 
@@ -1068,6 +1099,21 @@ input[type=range] {
         background-color: white;
         border-radius: 5px;
         box-shadow: 10px 10px 50px #0e0e0e;
+    }
+
+    .sidenav .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    
+    .sidenav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
     }
 
     .form-popup {
@@ -1165,6 +1211,21 @@ input[type=range] {
         z-index: 2;
     }
 
+    .sidenav .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    
+    .sidenav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
     .banner h2 {
         position: absolute;
         left: -20%;
@@ -1199,6 +1260,21 @@ input[type=range] {
         font-weight: 100;
     }
 
+    .sidenav .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    
+    .sidenav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
     .form-container {
         width: 240px;
         height: auto;
@@ -1228,5 +1304,20 @@ input[type=range] {
         top: 10%;
         left: 15%;
         z-index: 2;
+    }
+
+    .sidenav .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    
+    .sidenav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 25px;
     }
 }
