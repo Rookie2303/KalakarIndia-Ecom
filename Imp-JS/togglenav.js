@@ -10,7 +10,7 @@ function toggleNav() {
         arrowIcon.classList.remove("rotate");
     } else {
         filterNav.style.width = "180px";
-        mainContent.style.marginLeft = "25px";
+        // mainContent.style.marginLeft = "25px";
         filterNav.style.display = "block";
         filterNav.style.padding = "15px";
         filterNav.style.marginBottom="50px";
