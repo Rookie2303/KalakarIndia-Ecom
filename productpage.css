@@ -613,7 +613,7 @@ input[type=range] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
-    width: 30%;
+    width: 50%;
 }
 .gift #txt {
     padding: 15px;
@@ -622,6 +622,7 @@ input[type=range] {
 }
 .pur-details {
     display: flex;
+    flex-direction: column;
     margin: 15px;
     margin-top: 20px;
 }
@@ -841,10 +842,14 @@ input[type=range] {
     flex: 0 0 auto;
   }
   
-  #main {
+#main {
     flex: 1;
     padding: 0;
-  }
+}
+
+.slider {
+    position: absolute;
+}
 
 /* Media Queries */
 

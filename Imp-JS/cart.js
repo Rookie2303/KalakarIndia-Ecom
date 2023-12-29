@@ -1,5 +1,5 @@
 function opencart() {
-    document.getElementById("chartnav").style.width = "400px";
+    document.getElementById("chartnav").style.width = "300px";
 }
   
 function closecart() {

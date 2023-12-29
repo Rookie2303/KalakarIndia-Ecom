@@ -596,7 +596,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
-    width: 30%;
+    width: 50%;
 }
 .gift #txt {
     padding: 15px;
@@ -605,6 +605,7 @@ body {
 }
 .pur-details {
     display: flex;
+    flex-direction: column;
     margin: 15px;
     margin-top: 20px;
 }
