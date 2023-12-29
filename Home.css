@@ -71,7 +71,7 @@ body {
 .header .icons .sign-in img {
     width: 20px;
     height: 20px;
-    margin: 0px 0px 0px 0px;
+    margin-left: 25px;
 }
 
 .header .icons .search img {
@@ -199,57 +199,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-/* .form-popup {
-    display: none;
-    position: fixed;
-    top: 30%;
-    left: 35%;
-    z-index: 2;
-}
-  
-.form-container {
-    width:500px;
-    height:auto;
-    max-width: 1000px;
-    padding: 50px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 10px 10px 50px #0e0e0e;
-}
-  
-.form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-}
-  
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-  
 
-.form-container .btn {
-    background-color: black;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    margin-bottom:10px;
-    opacity: 0.8;
-}
-
-.form-container .btn:hover {
-    opacity: 1;
-}
-
-.cancel {
-    cursor: pointer;
-    float: right;
-} */
 
 .form-popup {
     display: none;
@@ -261,12 +211,12 @@ body {
 
 .form-container {
     width: 100%;
-    max-width: 500px; /* Adjust the max-width as needed */
+    max-width: 500px;
     padding: 50px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 10px 10px 50px #0e0e0e;
-    margin: 0 auto; /* Center the form horizontally */
+    margin: 0 auto;
 }
 
 .form-container input[type=text], 
@@ -412,8 +362,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 40px;
-    /* margin-left: 25px;
-    margin-right: 25px; */
 }
 
 .item {
@@ -1000,7 +948,7 @@ body {
     .header .icons .cart img {
         width: 20px;
         height: 20px;
-        margin: 0px 25px 0px 25px;
+        margin: 0px 0px 0px 25px;
     }
 
     .form-popup {
@@ -1034,7 +982,7 @@ body {
     }
 
     .header .logo {
-        width: 70%;
+        width: 60%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1049,7 +997,7 @@ body {
     }
 
     .header .icons {
-        width: 20%;
+        width: 30%;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
@@ -1220,10 +1168,23 @@ body {
     .footer {
         margin-left: 15px;
     }
-
-    .header .icons {
+    
+    .header .icons .sign-in img {
+        width: 20px;
+        height: 20px;
+        margin-left: 25px;
+    }
+    
+    .header .icons .search img {
         display: none;
     }
+    
+    .header .icons .cart img {
+        width: 20px;
+        height: 20px;
+        margin-left: 25px;
+    }
+
     .header .menu {        
         width: 10%;
         margin-top: 5px;
@@ -1231,7 +1192,7 @@ body {
     }
 
     .header .logo {
-        width: 90%;
+        width: 60%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1240,8 +1201,16 @@ body {
 
     }
 
+    .header .icons {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+
     .header .logo a {
-        font-size: x-large;
+        font-size: 20px;
     }
 
     .header .logo-name {
@@ -1255,7 +1224,7 @@ body {
     }
 
     .header span {
-        font-size: x-large;
+        font-size: 20px;
 
     }
     .banner p {
@@ -1265,6 +1234,15 @@ body {
 }
 
 @media only screen and (max-width: 320px) {
+    
+    .header .menu {
+        width: 10%;
+    }
+
+    .header .logo {
+        width: 80%;
+    }
+    
     .header .logo-name {
         margin-left: 0px;
     }
@@ -1293,7 +1271,31 @@ body {
     }
     .form-container {
         padding: 20px;
-    }    
+    }  
+    
+    .header .icons {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .header .icons .sign-in img {
+        display: none;
+    }
+    
+    .header .icons .search img {
+        width: 20px;
+        height: 20px;
+        margin: 0px 0px 0px 25px;
+    }
+    
+    .header .icons .cart img {
+        width: 20px;
+        height: 20px;
+        margin-left: 25px;
+    }
     
 }
 
@@ -1321,6 +1323,31 @@ body {
         width: 20px;
         height: 20px;
         margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    .header .icons {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .header .icons .sign-in img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .header .icons .search img {
+        width: 20px;
+        height: 20px;
+        margin: 0px 0px 0px 25px;
+    }
+    
+    .header .icons .cart img {
+        width: 20px;
+        height: 20px;
         margin-left: 25px;
     }
 
